@@ -5,7 +5,7 @@
 
 // Retorna um numero aleatorio entre o min e max
 int aleat (int min, int max) {
-	return (min + (rand() % max));
+	return (min + (rand() % (max+1-min)));
 };
 
 // Maximo divisor comum entre a e b - Metodo de Euclides
