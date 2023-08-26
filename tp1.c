@@ -2,15 +2,20 @@
 #include "racionais.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main (){
 
 	// Determina a seed do programa
-	int seed;
-	printf("Qual a seed?\t");
-	scanf("%d", &seed);
-	srand(seed);
-	printf("\n");
+	
+		/*int seed;
+		printf("Qual a seed?\t");
+		scanf("%d", &seed);
+		srand(seed);
+		printf("\n");
+		*/
+
+		srand(time(NULL));
 
 	// Variaveis globais + valores padroes
 	int n, maximo;
